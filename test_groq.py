@@ -1,4 +1,6 @@
+
 import os
+
 from dotenv import load_dotenv
 from groq import Groq
 
@@ -16,11 +18,11 @@ response = client.chat.completions.create(
     messages=[
         {
             "role": "system",
-            "content": "You are a Python code reviewer."
+            "content": "You are a code reviewer."
         },
         {
             "role": "user",
-            "content": "Explain what a pull request is in one sentence."
+            "content": "What is a pull request?"
         }
     ],
     temperature=0,
