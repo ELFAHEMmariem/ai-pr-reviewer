@@ -1,7 +1,13 @@
 .env
 .env.*
+!.env.example
+
 *.pem
+*.key
+
 .venv/
 __pycache__/
 .pytest_cache/
+.ruff_cache/
+
 *.log
